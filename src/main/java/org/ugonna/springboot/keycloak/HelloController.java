@@ -11,19 +11,16 @@ public class HelloController {
 
     @GetMapping("/admin")
     public String getAdmin(@RequestHeader String Authorization) {
-        //final String body = "Hello " + authentication.getName();
         return "Hello admin";
     }
 
     @GetMapping("/user")
     public String getUsers() {
-        //final String body = "Hello " + authentication.getName();
         return "Hello user";
     }
 
     @GetMapping("/random")
     public String getRandomUser() {
-        //final String body = "Hello " + authentication.getName();
         return "Hello random user";
     }
 }
