@@ -1,4 +1,4 @@
-package org.ugonna.springboot.keycloak;
+package org.ugonna.springboot.keycloak.config;
 
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;
 import org.keycloak.adapters.springsecurity.KeycloakConfiguration;

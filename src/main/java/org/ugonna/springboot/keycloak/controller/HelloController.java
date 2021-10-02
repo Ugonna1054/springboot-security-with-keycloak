@@ -1,4 +1,4 @@
-package org.ugonna.springboot.keycloak;
+package org.ugonna.springboot.keycloak.controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
