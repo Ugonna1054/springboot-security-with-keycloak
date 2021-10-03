@@ -14,6 +14,11 @@ public class HelloController {
         return "Hello admin";
     }
 
+    @GetMapping("/user")
+    public String getUsers(@RequestHeader String Authorization) {
+        return "Hello user";
+    }
+
     @GetMapping("/random")
     public String getRandomUser() {
         return "Hello random user";
