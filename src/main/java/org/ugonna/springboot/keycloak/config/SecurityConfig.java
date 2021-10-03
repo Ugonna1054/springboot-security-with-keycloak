@@ -38,7 +38,6 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated();
 
-
         //Custom error handler
         http.exceptionHandling().accessDeniedHandler(restAccessDeniedHandler);
     }
@@ -64,7 +63,7 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
         return new RegisterSessionAuthenticationStrategy(new SessionRegistryImpl());
     }
 
-    //Keycloak unauthorized handler
+    //Keycloak auth exception handler
     @Bean
     @Override
     protected KeycloakAuthenticationProcessingFilter keycloakAuthenticationProcessingFilter() throws Exception {
