@@ -14,13 +14,10 @@ import org.springframework.web.server.ServerErrorException;
 import org.ugonna.springboot.keycloak.dto.LoginRequest;
 import org.ugonna.springboot.keycloak.dto.LoginResponse;
 
-import java.io.IOException;
-
 
 @Service
 public class LoginService {
 
-    private static final Logger logger = LoggerFactory.getLogger(LoginService.class);
 
     @Value("${app.keycloak.login.url}")
     private String loginUrl;
