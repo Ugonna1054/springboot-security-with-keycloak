@@ -32,11 +32,12 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
         super.configure(http);
         http.csrf().disable().cors().disable()
                 .authorizeRequests()
-                .antMatchers("/login", "/random", "/user").permitAll()
+                .antMatchers("/login", "/random").permitAll()
                 .antMatchers("/visitor").hasRole("visitor")
                 .antMatchers("/admin").hasRole("admin")
                 .anyRequest()
                 .authenticated();
+
 
         //Custom error handler
         http.exceptionHandling().accessDeniedHandler(restAccessDeniedHandler);
